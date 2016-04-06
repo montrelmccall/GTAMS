@@ -1,0 +1,91 @@
+/*.highlight {
+	color: #fc0;
+}*/
+
+.lowlight {
+	color: #ccc;
+}
+
+.alert {
+	padding: 0.7em;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	margin-bottom: 1em;
+}
+
+.alert-warning {
+	color: #8a6d3b;
+	background-color: #fcf8e3;
+	border-color: #faebcc;
+}
+
+.alert-error {
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+}
+
+.input-error {
+	border-color: #a94442 !important;
+}
+
+.session-list {
+	border-right: 1px solid #ccc;
+	height: 100%;
+	background-color: #eee;
+	position: relative;
+	overflow-y: auto;
+}
+
+.session-item {
+	padding: 0.9em 1em;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+	position: relative;
+	display: block;
+}
+
+.session-item:not(.active) {
+	cursor: pointer;
+}
+
+.session-item:not(.active):hover {
+	background-color: #f0f0ff;
+}
+
+.session-item.new-session-item {
+	color: #1eaedb;
+	background-color: #fafaff;
+}
+
+.session-item.new-session-item.active {
+	color: #222;
+}
+
+.session-item.active {
+	/* Experiment colors
+	background-color: #89bdd3;
+	background-color: #DCECF9;
+	background-color: #1eaedb;*/
+	background-color: #89b4db;
+	cursor: default;
+}
+
+.session-item .lowlight {
+	position: absolute;
+	bottom: 0.6em;
+	color: #bbb;
+}
+
+.stick-bottom {
+	position: fixed;
+	bottom: 0;
+}
+
+.status-bar {
+	padding: 0.2em 0.3em;
+	border-top: 1px solid #ccc;
+	color: #999;
+	text-align: justify;
+	background-color: #eee;
+}

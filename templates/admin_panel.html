@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Admin Panel - GTAMS</title>
+
+    <!-- Mobile Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS -->
+    <link href="../css/normalize.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/stylesheet.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="row">
+      <div class="three columns session-list">
+        <div class="session-item new-session-item">
+          <!--<a class="button u-max-full-width" href="#" title="Add a new session">New session</a>-->
+          <em>+ New Session</em>
+        </div>
+        <div href="#" class="session-item">
+          <h5>Spring 2016</h4>
+          <em class="lowlight">Current Session</em>
+        </div>
+        <div class="session-item active">
+          <h5>Fall 2015</h4>
+        </div>
+      </div>
+      <div class="nine columns" style="overflow-y: auto; height: 100%;">
+        <div class="container" style="margin-top: 2em; margin-bottom: 1em;">
+          <h2>Create New Session</h2>
+          <form method="POST">
+            <div class="row">
+              <div class="one-half column">
+                <label for="email">Semester (This should be auto filled)</label>
+                <select class="u-full-width" id="semester">
+                  <option value="Spring">Spring</option>
+                  <option value="Summer">Summer</option>
+                  <option value="Fall">Fall</option>
+                </select>
+              </div>
+              <div class="one-half column">
+                <label for="email">Year (JS - deny taken session combos)</label>
+                <input class="u-full-width" type="number" id="year" value="2016" />
+              </div>
+
+            </div>
+            <label for="deadline_submission" title="This is the deadline that faculty must submit their nominations by.">Submission Deadline</label>
+            <input class="u-full-width" type="date" id="deadline_submission" />
+
+            <label for="deadline_response" title="This is the deadline that nominees must respond to their nominations by.">Response Deadline</label>
+            <input class="u-full-width" type="date" id="deadline_response" />
+
+            <label for="deadline_verification" title="This is the deadline that faculty must complete their nominations by.">Verification Deadline</label>
+            <input class="u-full-width" type="date" id="deadline_verification" />
+
+            <p>Userlist to be added.</p>
+
+            <input class="button-primary" type="submit" value="Create New Session" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="stick-bottom status-bar u-full-width">
+      <small>GTAMS designed by Nicholas Lewis, Stephanie Maltese, Danny Martinez, and Montrel McCall</small>
+    </footer>
+  </body>
+</html>
